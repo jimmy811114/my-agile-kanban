@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clawdbot Agile Kanban</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f9; margin: 0; padding: 20px; color: #333; }
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        .kanban-board { display: flex; gap: 20px; justify-content: center; overflow-x: auto; padding-bottom: 20px; }
+        .column { background-color: #ebecf0; border-radius: 8px; width: 300px; min-width: 280px; display: flex; flex-direction: column; max-height: 80vh; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .column-header { padding: 15px; font-weight: bold; font-size: 1.1em; color: #5e6c84; text-transform: uppercase; border-bottom: 2px solid #dfe1e6; }
+        .card-list { padding: 10px; flex-grow: 1; overflow-y: auto; }
+        .card { background: white; border-radius: 5px; padding: 15px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid transparent; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+        .card h3 { margin: 0 0 8px 0; font-size: 1em; color: #172b4d; }
+        .card p { margin: 0; font-size: 0.9em; color: #5e6c84; line-height: 1.4; }
+        .card .tag { display: inline-block; font-size: 0.75em; padding: 2px 8px; border-radius: 10px; margin-top: 10px; font-weight: bold; background: #deebff; color: #0747a6; }
+        footer { text-align: center; margin-top: 40px; font-size: 0.85em; color: #7a869a; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🤖 Clawdbot 敏捷開發看板</h1>
+        <p>最後更新：2026-01-31 01:58:44</p>
+        <p>外部訪問：<a href="https://restoration-saw-atlanta-phentermine.trycloudflare.com" target="_blank">https://restoration-saw-atlanta-phentermine.trycloudflare.com</a></p>
+    </header>
+    <div class="kanban-board">
+        
+        <div class="column col-todo">
+            <div class="column-header" style="border-bottom-color: #ff9f1a;">待處理 (To Do)</div>
+            <div class="card-list">
+                
+                <div class="card" style="border-left-color: #ff9f1a;">
+                    <h3>系統級自動化探索</h3>
+                    <p>研究在 Linux 環境下透過 Python (PyAutoGUI/xdotool) 實現 OS 滑鼠與鍵盤操控。</p>
+                    <span class="tag">研究</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #ff9f1a;">
+                    <h3>多頻道通訊擴展</h3>
+                    <p>評估並整合 Telegram 與 LINE Channel API，提供除了 Discord 以外的互動管道。</p>
+                    <span class="tag">開發</span>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="column col-progress">
+            <div class="column-header" style="border-bottom-color: #0079bf;">進行中 (In Progress)</div>
+            <div class="card-list">
+                
+                <div class="card" style="border-left-color: #0079bf;">
+                    <h3>開發者洞察引擎</h3>
+                    <p>優化新聞過濾邏輯，為軟體開發者提供更具深度的架構與安全性分析建議。</p>
+                    <span class="tag">優化</span>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="column col-done">
+            <div class="column-header" style="border-bottom-color: #36b37e;">已完成 (Done)</div>
+            <div class="card-list">
+                
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>遠端存取最佳化</h3>
+                    <p>Gateway 成功綁定至 LAN，並協助使用者透過外部設備訪問控制台。</p>
+                    <span class="tag">系統</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>科技新聞自動化管線</h3>
+                    <p>對接 TechNews.tw RSS，並設定 Crontab 於每日 08:30 發送 HTML 專業電子報。</p>
+                    <span class="tag">自動化</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>Discord 帳號配對</h3>
+                    <p>完成 Discord 頻道整合與使用者授權審核。</p>
+                    <span class="tag">整合</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>看板面板視覺化</h3>
+                    <p>將任務監控網站改版為 Kanban 敏捷看板樣式，提升任務進度可視性。</p>
+                    <span class="tag">緊急</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>任務看板自動化更新系統</h3>
+                    <p>建立 JSON 驅動的看板更新機制，確保任務狀態能即時反應在網頁上。</p>
+                    <span class="tag">系統</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>深度技術調研：DeepSeek 與 系統融合</h3>
+                    <p>針對今日重點科技新聞進行深度研究，並將分析報告同步至 Notion。</p>
+                    <span class="tag">研究</span>
+                </div>
+            
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        &copy; 2026 Powered by Clawdbot JSON-Dynamic Engine
+    </footer>
+</body>
+</html>
