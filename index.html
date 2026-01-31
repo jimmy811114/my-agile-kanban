@@ -17,15 +17,24 @@
         .card h3 { margin: 0 0 8px 0; font-size: 1em; color: #172b4d; }
         .card p { margin: 0; font-size: 0.9em; color: #5e6c84; line-height: 1.4; }
         .card .tag { display: inline-block; font-size: 0.75em; padding: 2px 8px; border-radius: 10px; margin-top: 10px; font-weight: bold; background: #deebff; color: #0747a6; }
+        
+        .info-section { max-width: 940px; margin: 20px auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .info-box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-top: 4px solid #1a73e8; }
+        .info-box h2 { margin-top: 0; font-size: 1.2em; color: #1a73e8; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .info-box ul { padding-left: 20px; font-size: 0.9em; }
+        .info-box li { margin-bottom: 8px; }
+        .info-box code { background: #f1f3f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; font-size: 0.85em; display: block; margin-bottom: 5px; }
+        
         footer { text-align: center; margin-top: 40px; font-size: 0.85em; color: #7a869a; }
     </style>
 </head>
 <body>
     <header>
         <h1>🤖 Clawdbot 敏捷開發看板</h1>
-        <p>最後更新：2026-01-31 08:08:02</p>
+        <p>最後更新：2026-01-31 08:37:07</p>
         <p>外部訪問：<a href="https://jimmy811114.github.io/my-agile-kanban/" target="_blank">https://jimmy811114.github.io/my-agile-kanban/</a></p>
     </header>
+
     <div class="kanban-board">
         
         <div class="column col-todo">
@@ -104,8 +113,20 @@
         </div>
         
     </div>
+
+    <div class="info-section">
+        <div class="info-box">
+            <h2>📰 每日科技焦點 (TechNews)</h2>
+            <ul><li><a href="https://technews.tw/2026/01/31/ai-is-conducting-mental-health-via-music-therapy-that-aims-for-psychological-peace-and-harmony/" target="_blank">不只放歌那麼簡單，AI 如何為音樂治療量身打造情緒處方箋</a></li><li><a href="https://technews.tw/2026/01/31/nvidia-vr200-nvl72/" target="_blank">輝達新伺服器單櫃售價上看 1.8 億元，吃到大餅的 VR200 機櫃 56 家台廠出列</a></li><li><a href="https://technews.tw/2026/01/31/a-hidden-effect-of-chemotherapy-could-help-block-metastasis/" target="_blank">化療重塑腸道微生物，激發免疫系統對抗腫瘤轉移</a></li><li><a href="https://technews.tw/2026/01/31/non-invasive-monitoring-of-the-european-wildcat-in-a-recently-colo/" target="_blank">傳說中的「森林幽靈」重新現身！消失半世紀的歐洲野貓，悄悄回歸大自然懷抱</a></li><li><a href="https://technews.tw/2026/01/31/magnetic-avalanches-power-solar-flares-finds-solar-orbiter/" target="_blank">太陽其實不是火爆浪子！大型閃焰是小磁重連事件「聚沙成塔」結果</a></li></ul>
+        </div>
+        <div class="info-box">
+            <h2>⏰ 系統自動化排程 (Cron)</h2>
+            <code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code><br><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code><br><code>5 0 * * * /usr/bin/python3 /home/jimmy/clawd/sync_notion.py >> /home/jimmy/clawd/sync_notion.log 2>&1</code><br>
+        </div>
+    </div>
+
     <footer>
-        &copy; 2026 Powered by Clawdbot JSON-Dynamic Engine
+        &copy; 2026 Powered by Clawdbot Automated Dashboard
     </footer>
 </body>
 </html>
