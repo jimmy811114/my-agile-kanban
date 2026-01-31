@@ -9,7 +9,7 @@
         header { text-align: center; margin-bottom: 30px; }
         h1 { color: #2c3e50; margin-bottom: 10px; }
         .kanban-board { display: flex; gap: 20px; justify-content: center; overflow-x: auto; padding-bottom: 20px; }
-        .column { background-color: #ebecf0; border-radius: 8px; width: 300px; min-width: 280px; display: flex; flex-direction: column; max-height: 80vh; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .column { background-color: #ebecf0; border-radius: 8px; width: 300px; min-width: 280px; display: flex; flex-direction: column; max-height: 80vh; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .column-header { padding: 15px; font-weight: bold; font-size: 1.1em; color: #5e6c84; text-transform: uppercase; border-bottom: 2px solid #dfe1e6; }
         .card-list { padding: 10px; flex-grow: 1; overflow-y: auto; }
         .card { background: white; border-radius: 5px; padding: 15px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid transparent; }
@@ -23,7 +23,7 @@
         .info-box h2 { margin-top: 0; font-size: 1.2em; color: #1a73e8; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         .info-box ul { padding-left: 20px; font-size: 0.9em; }
         .info-box li { margin-bottom: 8px; }
-        .info-box code { background: #f1f3f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; font-size: 0.85em; display: block; margin-bottom: 5px; }
+        .info-box code { background: #f1f3f4; padding: 5px; border-radius: 3px; font-family: monospace; font-size: 0.8em; display: block; margin-top: 5px; color: #c7254e; word-break: break-all; }
         
         footer { text-align: center; margin-top: 40px; font-size: 0.85em; color: #7a869a; }
     </style>
@@ -31,7 +31,7 @@
 <body>
     <header>
         <h1>🤖 Clawdbot 敏捷開發看板</h1>
-        <p>最後更新：2026-01-31 08:37:07</p>
+        <p>最後更新：2026-01-31 08:40:17</p>
         <p>外部訪問：<a href="https://jimmy811114.github.io/my-agile-kanban/" target="_blank">https://jimmy811114.github.io/my-agile-kanban/</a></p>
     </header>
 
@@ -121,7 +121,7 @@
         </div>
         <div class="info-box">
             <h2>⏰ 系統自動化排程 (Cron)</h2>
-            <code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code><br><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code><br><code>5 0 * * * /usr/bin/python3 /home/jimmy/clawd/sync_notion.py >> /home/jimmy/clawd/sync_notion.log 2>&1</code><br>
+            <div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日科技新聞電子報</strong><code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日看板狀態回報</strong><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 Notion 數據同步任務</strong><code>5 0 * * * /usr/bin/python3 /home/jimmy/clawd/sync_notion.py >> /home/jimmy/clawd/sync_notion.log 2>&1</code></div>
         </div>
     </div>
 
