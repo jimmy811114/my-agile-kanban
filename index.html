@@ -31,7 +31,7 @@
 <body>
     <header>
         <h1>🤖 Clawdbot 敏捷開發看板</h1>
-        <p>最後更新：2026-02-01 00:10:04</p>
+        <p>最後更新：2026-02-01 22:46:46</p>
         <p>外部訪問：<a href="https://jimmy811114.github.io/my-agile-kanban/" target="_blank">https://jimmy811114.github.io/my-agile-kanban/</a></p>
     </header>
 
@@ -127,6 +127,36 @@
                     <span class="tag">進化</span>
                 </div>
             
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>Telegram 官方通訊整合</h3>
+                    <p>完成 Telegram Bot 配對，建立穩定且具備主動通知能力的第二溝通管道。</p>
+                    <span class="tag">整合</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>Google Drive 雲端串接</h3>
+                    <p>透過 rclone 完成 OAuth 授權，支援大檔案傳輸與雲端音檔分析。</p>
+                    <span class="tag">雲端</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>阿米靈魂自動備份系統</h3>
+                    <p>建立備份腳本並設定每日 03:00 自動同步全系統設定與記憶至 Google Drive。</p>
+                    <span class="tag">安全</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>系統硬體規格大幅升級</h3>
+                    <p>磁碟擴充至 50GB，記憶體升級至 8GB，CPU 提升至 4 核心，顯著提升運算效能。</p>
+                    <span class="tag">系統</span>
+                </div>
+            
+                <div class="card" style="border-left-color: #36b37e;">
+                    <h3>Ubuntu 一鍵佈署腳本</h3>
+                    <p>開發 install_ami.sh 腳本，支援在乾淨環境下快速復原阿米助手與相關工具。</p>
+                    <span class="tag">開發</span>
+                </div>
+            
             </div>
         </div>
         
@@ -139,16 +169,16 @@
         <div style="margin-bottom: 15px; background: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #e0e0e0;">
             <p style="margin: 0 0 5px 0; font-size: 0.85em; font-weight: bold; color: #555;">🎧 語音播報摘要 (適合通勤收聽):</p>
             <audio controls style="width: 100%; height: 35px;">
-                <source src="news_summary.mp3?t=1769875804.355567" type="audio/mpeg">
+                <source src="news_summary.mp3?t=1769957206.585643" type="audio/mpeg">
                 您的瀏覽器不支援語音播放。
             </audio>
         </div>
         
-            <ul><li><a href="https://technews.tw/2026/02/01/hubble-telescope-unravels-the-mystery-of-the-blue-straggler/" target="_blank">為何老星團會有「年輕藍星」？哈伯觀測 3,419 顆藍掉隊星找到新解釋</a></li><li><a href="https://technews.tw/2026/02/01/monarch-butterfly/" target="_blank">帝王斑蝶遷徙路線揭開謎底，科學家用 GPS 即時追蹤跨洲飛行</a></li><li><a href="https://technews.tw/2026/02/01/singing-group-helps-dementia-patients-to-remember/" target="_blank">「我不記得你，但我記得這首歌」阿姆斯特丹音樂廳裡的特別合唱團，讓失智症家庭重拾笑容</a></li><li><a href="https://technews.tw/2026/01/31/nvidia-ceo-jensen-huang-hosts-dinner-with-key-taiwanese-suppliers-in-taipei/" target="_blank">黃仁勳再辦兆元宴，台廠 AI 供應鏈大老齊聚</a></li><li><a href="https://ccc.technews.tw/2026/01/31/did-you-notice-diablo-ivs-new-expansion-blizzards-twilight-may-be-closer-than-we-thought/" target="_blank">你有注意〈暗黑 4〉要出新資料片嗎？暴雪的黃昏可能比想像更快到來</a></li></ul>
+            <ul><li><a href="https://technews.tw/2026/02/01/openai-ceo-sam-altman-opts-to-text-in-lowercase-but-gen-z-shouldnt-copy-him-if-they-want-a-shot-at-starting-their-career/" target="_blank">Z 世代想學 Sam Altman 全小寫字母文體？小心給人不專業又懶惰的印象</a></li><li><a href="https://technews.tw/2026/02/01/moltbook/" target="_blank">Moltbook 是什麼？百萬 AI 代理人組建社群「踢走人類」私密通訊</a></li><li><a href="https://technews.tw/2026/02/01/enfinity-global-microsoft/" target="_blank">Enfinity Global 與 Microsoft 簽訂的 366 兆瓦購電協議組合中的首個專案成功投入商業營運</a></li><li><a href="https://technews.tw/2026/02/01/internet-archive/" target="_blank">擔心成為 AI 訓練後門，媒體集體限制網際網路檔案館存取</a></li><li><a href="https://finance.technews.tw/2026/02/01/major-european-economies-are-sounding-alarm-bells/" target="_blank">德國製造業熄火、英國陷富裕病、法義債台高築，歐洲大國經濟拉警報！</a></li></ul>
         </div>
         <div class="info-box">
             <h2>⏰ 系統自動化排程 (Cron)</h2>
-            <div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日科技新聞電子報</strong><code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日看板狀態回報</strong><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 台股智能分析日報</strong><code>0 9 * * * /usr/bin/python3 /home/jimmy/clawd/stock_analyzer.py >> /home/jimmy/clawd/stock_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 🤖 創意實驗室自主演化</strong><code>0 1 * * * (Gateway Internal Cron)</code></div>
+            <div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日科技新聞電子報</strong><code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日看板狀態回報</strong><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 台股智能分析日報</strong><code>0 9 * * * /usr/bin/python3 /home/jimmy/clawd/stock_analyzer.py >> /home/jimmy/clawd/stock_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 技術趨勢自動調研</strong><code>0 4 * * * python3 /home/jimmy/clawd/skills/tech-research-sync/scripts/sync_tech_report.py "$(cat /home/jimmy/.config/notion/api_key)" "2f8a383544e5802d95bcd40ccbda54c6" && python3 /home/jimmy/clawd/update_kanban.py >> /home/jimmy/clawd/daily_research.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 🤖 創意實驗室自主演化</strong><code>0 1 * * * (Gateway Internal Cron)</code></div>
         </div>
     </div>
 
