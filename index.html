@@ -31,7 +31,7 @@
 <body>
     <header>
         <h1>🤖 Clawdbot 敏捷開發看板</h1>
-        <p>最後更新：2026-02-03 07:00:02</p>
+        <p>最後更新：2026-02-03 09:39:46</p>
         <p>外部訪問：<a href="https://jimmy811114.github.io/my-agile-kanban/" target="_blank">https://jimmy811114.github.io/my-agile-kanban/</a></p>
     </header>
 
@@ -169,16 +169,16 @@
         <div style="margin-bottom: 15px; background: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #e0e0e0;">
             <p style="margin: 0 0 5px 0; font-size: 0.85em; font-weight: bold; color: #555;">🎧 語音播報摘要 (適合通勤收聽):</p>
             <audio controls style="width: 100%; height: 35px;">
-                <source src="news_summary.mp3?t=1770073202.732134" type="audio/mpeg">
+                <source src="news_summary.mp3?t=1770082786.361777" type="audio/mpeg">
                 您的瀏覽器不支援語音播放。
             </audio>
         </div>
         
-            <ul><li><a href="https://technews.tw/2026/02/03/2026-leo-war-keep-going/" target="_blank">2026 年成衛星產業決戰年：Starlink 領跑低軌道布局，低延遲連線引爆全球需求</a></li><li><a href="https://finance.technews.tw/2026/02/03/dassault-systemes-strongly-supports-engineers-as-the-core-of-the-ai-%e2%80%8b%e2%80%8btechnology-revolution/" target="_blank">達梭系統力挺工程師將成 AI 技術革命核心，三位擬夥伴扮演最佳助手</a></li><li><a href="https://technews.tw/2026/02/02/lasertec-outlook/" target="_blank">全年展望不如預期、與 ASML 接單高成對比，Lasertec 股價重挫 14%</a></li><li><a href="https://technews.tw/2026/02/02/graphene-superfluid-supersolid/" target="_blank">石墨烯實驗首觀察到超流體停止流動，轉變成超固體</a></li><li><a href="https://technews.tw/2026/02/02/vibe-coding-clawdbot/" target="_blank">沉迷 Vibe Coding 到餐廳也在寫程式，Clawdbot 創辦人為心理健康喊停</a></li></ul>
+            <ul><li><a href="https://infosecu.technews.tw/2026/02/03/vietnam-social-media-identity-verification/" target="_blank">越南社群媒體強制身分驗證，打擊假帳號與資訊外洩</a></li><li><a href="https://finance.technews.tw/2026/02/03/palantir-reports-q4-2025/" target="_blank">Palantir 狂吃美國政府標案  Q4 營收飆升 70%</a></li><li><a href="https://technews.tw/2026/02/03/snapchat-blocks-415000-underage-accounts-in-australia-under-social-media-ban/" target="_blank">澳洲未滿 16 歲禁用社媒，Snapchat 封鎖 41.5 萬帳號</a></li><li><a href="https://technews.tw/2026/02/03/samsung-exynos-2600-galaxy-s26/" target="_blank">三星 Exynos 2600 效能進展浮現，Galaxy S26 有望搭載</a></li><li><a href="https://technews.tw/2026/02/03/openai-is-unsatisfied-with-some-nvidia-chips-and-looking-for-alternatives/" target="_blank">OpenAI 對 GPU 不滿？奧特曼急澄清、輝達盤後揚</a></li></ul>
         </div>
         <div class="info-box">
             <h2>⏰ 系統自動化排程 (Cron)</h2>
-            <div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日科技新聞電子報</strong><code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日看板狀態回報</strong><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 台股智能分析日報</strong><code>0 9 * * * /usr/bin/python3 /home/jimmy/clawd/stock_analyzer.py >> /home/jimmy/clawd/stock_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 技術趨勢自動調研</strong><code>0 4 * * * python3 /home/jimmy/clawd/skills/tech-research-sync/scripts/sync_tech_report.py "$(cat /home/jimmy/.config/notion/api_key)" "2f8a383544e5802d95bcd40ccbda54c6" && python3 /home/jimmy/clawd/update_kanban.py >> /home/jimmy/clawd/daily_research.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 未知任務</strong><code>0 7 * * * /usr/bin/python3 /home/jimmy/clawd/update_kanban.py >> /home/jimmy/clawd/kanban_update.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 🤖 創意實驗室自主演化</strong><code>0 1 * * * (Gateway Internal Cron)</code></div>
+            <div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日科技新聞電子報</strong><code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日看板狀態回報</strong><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 台股智能分析日報</strong><code>0 9 * * * /usr/bin/python3 /home/jimmy/clawd/stock_analyzer.py >> /home/jimmy/clawd/stock_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 技術趨勢自動調研</strong><code>0 4 * * * python3 /home/jimmy/clawd/skills/tech-research-sync/scripts/sync_tech_report.py "$(cat /home/jimmy/.config/notion/api_key)" "2f8a383544e5802d95bcd40ccbda54c6" && python3 /home/jimmy/clawd/update_kanban.py >> /home/jimmy/clawd/daily_research.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 看板自動更新同步</strong><code>0 7 * * * /usr/bin/python3 /home/jimmy/clawd/update_kanban.py >> /home/jimmy/clawd/kanban_update.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 🤖 創意實驗室自主演化</strong><code>0 1 * * * (Gateway Internal Cron)</code></div>
         </div>
     </div>
 
