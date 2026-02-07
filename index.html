@@ -31,7 +31,7 @@
 <body>
     <header>
         <h1>🤖 Clawdbot 敏捷開發看板</h1>
-        <p>最後更新：2026-02-07 07:00:03</p>
+        <p>最後更新：2026-02-07 12:09:22</p>
         <p>外部訪問：<a href="https://jimmy811114.github.io/my-agile-kanban/" target="_blank">https://jimmy811114.github.io/my-agile-kanban/</a></p>
     </header>
 
@@ -169,18 +169,36 @@
         <div style="margin-bottom: 15px; background: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #e0e0e0;">
             <p style="margin: 0 0 5px 0; font-size: 0.85em; font-weight: bold; color: #555;">🎧 語音播報摘要 (適合通勤收聽):</p>
             <audio controls style="width: 100%; height: 35px;">
-                <source src="news_summary.mp3?t=1770418803.351726" type="audio/mpeg">
+                <source src="news_summary.mp3?t=1770437362.862207" type="audio/mpeg">
                 您的瀏覽器不支援語音播放。
             </audio>
         </div>
         
-            <ul><li><a href="https://technews.tw/2026/02/07/kepler-telescope-discovers-exoplanet-nearly-the-size-of-earth/" target="_blank">距離 146 光年、大小近乎地球，HD 137010b 成為宜居帶外緣的新希望</a></li><li><a href="https://finance.technews.tw/2026/02/06/glt-4935-202601-financial-report/" target="_blank">茂林-KY1月營收月增0.8%</a></li><li><a href="https://finance.technews.tw/2026/02/06/chenbro-8210-202601-financial-report/" target="_blank">勤誠1月營收26.50 億元</a></li><li><a href="https://finance.technews.tw/2026/02/06/voltronic-6409-202601-financial-report/" target="_blank">旭隼1月營收月增5.7%</a></li><li><a href="https://finance.technews.tw/2026/02/06/insyde-6231-202601-financial-report/" target="_blank">系微1月營收1.08 億元</a></li></ul>
+            <ul><li><a href="https://technews.tw/2026/02/07/st-engineering-unveiled-new-ar15-system-ame-a514-rifle-and-will-replace-the-sar-21/" target="_blank">又一國加入地球聯邦軍行列，新加坡推出 AR-15 構型新制式步槍</a></li><li><a href="https://technews.tw/2026/02/07/microsoft-shifts-ai-strategy-as-satya-nadella-into-product-development/" target="_blank">納德拉下海當 PM、痛批 Copilot「不夠聰明」，微軟 AI 戰略大轉向內幕</a></li><li><a href="https://technews.tw/2026/02/07/this-black-hole-burps-with-death-star-energy/" target="_blank">比死星強 100 兆倍！黑洞「Jetty McJetface」延遲噴流再爆發，亮度暴增 50 倍</a></li><li><a href="https://finance.technews.tw/2026/02/07/takaichi-sanae-economic-distress/" target="_blank">市場為何不埋單高市經濟學？日圓、日債深陷翹翹板困局</a></li><li><a href="https://technews.tw/2026/02/07/a-deceptively-simple-idea-could-revolutionize-volcanic-eruption-forecasting/" target="_blank">火山噴發前真的有跡可循，科學家用地震儀抓到它</a></li></ul>
         </div>
         <div class="info-box">
             <h2>⏰ 系統自動化排程 (Cron)</h2>
             <div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日科技新聞電子報</strong><code>30 8 * * * /usr/bin/python3 /home/jimmy/clawd/tech_news_bot.py >> /home/jimmy/clawd/bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 每日看板狀態回報</strong><code>0 22 * * * /usr/bin/python3 /home/jimmy/clawd/kanban_email_bot.py >> /home/jimmy/clawd/kanban_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 台股智能分析日報</strong><code>0 9 * * * /usr/bin/python3 /home/jimmy/clawd/stock_analyzer.py >> /home/jimmy/clawd/stock_bot.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 技術趨勢自動調研</strong><code>0 4 * * * python3 /home/jimmy/clawd/skills/tech-research-sync/scripts/sync_tech_report.py "$(cat /home/jimmy/.config/notion/api_key)" "2f8a383544e5802d95bcd40ccbda54c6" && python3 /home/jimmy/clawd/update_kanban.py >> /home/jimmy/clawd/daily_research.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 看板自動更新同步</strong><code>0 7 * * * /usr/bin/python3 /home/jimmy/clawd/update_kanban.py >> /home/jimmy/clawd/kanban_update.log 2>&1</code></div><div style="margin-bottom:10px;"><strong style="color:#555;">📌 🤖 創意實驗室自主演化</strong><code>0 1 * * * (Gateway Internal Cron)</code></div>
         </div>
     </div>
+
+    <section style="max-width:940px; margin: 20px auto; background:white; padding:20px; border-radius:8px; border-top:4px solid #e74c3c;">
+        <h2 style="color:#e74c3c; font-size:1.2em; border-bottom:1px solid #eee; padding-bottom:10px;">🍲 家電採購研究：微波爐清單</h2>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:15px; margin-top:15px;">
+            <div style="text-align:center;">
+                <img src="https://img.pchome.com.tw/cs/items/DMAG6BA900B0XVE/000001_1605510425.jpg" style="width:100%; border-radius:8px;">
+                <p style="font-size:0.8em; font-weight:bold; margin-top:5px;">聲寶 20L ($1,980)</p>
+            </div>
+            <div style="text-align:center;">
+                <img src="https://s.yimg.com/zp/images/D09CDDA6CA06BA066EC6FECC0EE6FA06_500.jpg" style="width:100%; border-radius:8px;">
+                <p style="font-size:0.8em; font-weight:bold; margin-top:5px;">惠而浦 20L ($2,490)</p>
+            </div>
+            <div style="text-align:center;">
+                <img src="https://img.pchome.com.tw/cs/items/DMAG0HA900F6XWE/000001_1654587422.jpg" style="width:100%; border-radius:8px;">
+                <p style="font-size:0.8em; font-weight:bold; margin-top:5px;">國際牌 25L ($3,690)</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         &copy; 2026 Powered by Clawdbot Automated Dashboard
